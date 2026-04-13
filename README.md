@@ -7,6 +7,12 @@ This project implements a connected internal workflow for:
 
 The app is built as a single React portal with role-based access, shared Supabase backend logic, and a clean split between desktop-first admin workflow and mobile-first technician workflow.
 
+## Submission Scope
+
+This submission intentionally focuses on `Module 1` and `Module 2` to deliver a working admin-to-technician workflow with stronger execution quality rather than spreading effort across partially implemented modules.
+
+Modules outside this scope, including WhatsApp notifications, manager review, KPI dashboard, and AI operations queries, are documented as not implemented in this build.
+
 ## Stack
 
 - React with Vite
@@ -119,6 +125,13 @@ Module 2 expects technician account names to match `orders.assigned_technician_n
 6. Technician uploads service proof and completes the job.
 7. Supabase stores the completion and updates the order to `Job Done`.
 
+## AI Integration
+
+- Status: Not implemented in this submission.
+- Supported AI queries: None.
+- AI limitations: This build does not include the `Operations Query Window`, structured AI query handling, or AI-generated operational summaries.
+- Scope rationale: Development time was prioritized on delivering a stable workflow for order creation, technician assignment, service completion, and proof-of-work uploads.
+
 ## Scripts
 
 - `npm run dev`
@@ -137,3 +150,4 @@ Module 2 expects technician account names to match `orders.assigned_technician_n
 - Technician identity is matched by technician name for assessment simplicity.
 - Optional payment capture is not implemented.
 - WhatsApp notifications, manager review, dashboard, and AI features are intentionally excluded from this build.
+- This submission is intended to demonstrate a complete and testable core service workflow rather than broader but incomplete feature coverage.
